@@ -1,0 +1,68 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Snake Game</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			width: 100%;
+			position: relative;
+		}
+
+		.menu {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 20%);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 25px;
+		}
+
+		#startBtn,
+		#restartBtn {
+			width: 250px;
+			height: 50px;
+			border: 6px solid red;
+			background-color: orange;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+		}
+
+		#restartBtn {
+			display: none;
+		}
+
+		h1 {
+			font-family: Verdana;
+		}
+
+		canvas {
+			width: 100%;
+			border: 5px solid black;
+			background: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="menu">
+			<h1>SNAKE GAME</h1>
+			<button id="startBtn">Start Game</button>
+			<button id="restartBtn">Restart Game</button>
+		</div>
+		<canvas id="snakeShit"></canvas>
+	</div>
+
+	<script src="snake.js"></script>
+</body>
+
+</html>
